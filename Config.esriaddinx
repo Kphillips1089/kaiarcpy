@@ -1,0 +1,21 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ArcMapAddin1</Name>
+  <AddInID>{63b9b77d-7f8e-45f3-8f64-a8a373dd2f2a}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\ArcMapAddin1.png</Image>
+  <Author>G5223</Author>
+  <Company></Company>
+  <Date>4/9/2018</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ArcMapAddin1.dll" namespace="ArcMapAddin1">
+    <ArcMap>
+      <Commands>
+        <Button id="ArcMapAddin1_marketshares" class="marketshares" message="calculate market share" caption="market shares" tip="calculate market share" category="marketshares" image="Images\marketshares.png" />
+        <ComboBox id="ArcMapAddin1_dialog" class="dialog" message="dialog box" caption="dialog" tip="dialog box" category="marketshares" image="Images\dialog.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
